@@ -1,0 +1,585 @@
+/* ---------- Html ---------- */
+
+html, * {
+    margin: 0;
+    padding: 0;
+}
+
+/* ---------- Header ---------- */
+
+nav.navbar {
+    background-color: rgb(53,58,64);
+    display: flex;
+    justify-content: center;
+}
+
+a.navbar-brand {
+    color: white;
+    text-decoration: none;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+ul.nav {
+    display: inline-block;
+}
+
+a.nav-link {
+    color: white;
+}
+
+#tickets{
+    color: rgb(40,166,69);
+}
+
+div#logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+img.logoCac {
+    width: 20%;
+    height: 20%;
+}
+
+div.row {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+li.nav-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ---------- Main ---------- */
+
+main {
+    margin: 0;
+    padding: 0;
+}
+
+/* ---------- Imagen Fondo ---------- */
+
+h2.text-end {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+#texto {
+    color: white;
+    text-align: justify;
+}
+
+#image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),url("../Images/ba1.jpg");
+    background-position: center center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img-fluid {
+    height: 100vh;
+}
+
+div#comentario {
+    padding: 0;
+    margin: 0;
+}
+
+/* ---------- Botones Imagen Fondo ---------- */
+
+#botonComprar {
+    background-color: rgb(41,167,68);
+    border-color: rgb(41,167,68);
+    color: white;
+    margin: 1%;
+}
+
+#botonOrador {
+    margin: 1%;
+}
+
+div#botonComentario {
+    display: flex;
+    justify-content: center;
+    margin: 1vh 1vw;
+}
+
+/* ---------- Section Cards ---------- */
+
+h2.abajo {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.textoImagen {
+    text-align: center;
+    margin-bottom: 1vh;
+}
+
+.card-group {
+    padding: 0;
+    justify-content: center;
+}
+
+.card {
+    height: 100%;
+    margin: 1vh 1vw;
+}
+
+.card-text {
+    font-size: small;
+}
+
+button#card {
+    text-align: justify;
+    margin-bottom: 1vh;
+    color: black;
+}
+
+.btn-warning#card {
+    color: black;
+}
+
+section#tarjeta {
+    margin-bottom: 2vh;
+    padding-bottom: 2vh;
+    margin-left: 8vw;
+    margin-right: 8vw;
+}
+
+/* ---------- Section Imagenes  ---------- */
+
+h2.bsas {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    margin-top: 2vh;
+}
+
+#textoMedio {
+    background-color: rgb(53,58,64);;
+    color: white;
+}
+
+#conoce {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 30%;
+    margin-bottom: 5%;
+}
+
+#textoImagen {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+#imagenHono {
+    display: flex;
+    width: 100%;
+    margin: 2%;
+    padding: 0;
+}
+
+/* ---------- Section Orador ---------- */
+
+h1.bill {
+    text-align: center;
+}
+
+p.textoArriba {
+    text-align: center;
+    padding-bottom: 1vh;
+    margin-bottom: 0;
+}
+
+p.orador {
+    text-align: center;
+}
+
+span.charla {
+    border-bottom: 2px dotted;
+    text-decoration: none; 
+}
+
+textarea::placeholder {
+    font-size: 1.5em;
+  }
+
+.btn.btn-primary {
+    background-color: rgb(150,201,62);
+    border-color: rgb(150,201,62);;
+}
+
+.mb-3 {
+    margin-top: 2vh;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#envioUno {
+    margin: 0.5%;
+}
+
+#envioDos {
+    margin: 0;
+}
+
+div#formulario {
+    margin: 0;
+    padding: 0 5vw 0 5vw;
+}
+
+#orador {
+    margin-bottom: 0;
+    padding-bottom: 2vh;
+}
+
+#botonNombre {
+    display: flex;
+    padding: 0;
+}
+
+#botonEnviar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2vh;
+}
+
+#etiquetaArea {
+    display: flex;
+    justify-content: center;
+}
+
+/* ---------- Footer ---------- */
+
+footer {
+    background-color: rgb(30,77,105);
+}
+
+#menuFooter {
+    display: inline-block;
+    height: 70vh;
+    padding-top: 2vh;
+}
+
+#menu {
+    display: flex;
+    justify-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+#item {
+    font-family: sans-serif;
+    text-align: justify;
+}
+
+/* ---------- Media Queries ---------- */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+
+    div ul.nav {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+    }
+
+    div h2.text-end {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+    }
+
+    h5#texto {
+        display: flex;
+        margin: 1%;
+        margin-bottom: 3%;
+        justify-content: center;
+    }
+
+    div#botonComentario {
+        display: flex;
+        justify-content: center;
+        margin: 1%;
+    }
+
+    #comprar {
+        margin: 0 2vw;
+    }    
+
+    #conoce {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+
+    div.card {
+        margin: 0 5vw;
+    }
+
+    #textoMedio {
+        height: 60vh;
+    }
+
+    h2.bsas {
+        display: flex;
+        justify-content: center;
+    }
+
+    #item {
+        display: flex;
+        justify-content: center;
+    }
+
+    #envioUno {
+        display: flex;
+        justify-content: center;
+        padding: 0;   
+    }
+
+    #envioDos {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        margin-top: 1vh;
+    }
+
+    #tarjetas {
+        margin-top: 2vh;
+        padding-top: 2vh;
+    }
+
+    #botonNombre {
+        padding: 0;
+        margin: 0;
+    }
+
+    #areaOrador {
+        padding: 0;
+    }
+
+    #menuFooter {
+        height: 50vh;
+    }
+
+    img.logoCac {
+        width: 40%;
+        height: 40%;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+
+    .nav-item {
+        margin: 3%;
+    }
+
+    div.card {
+        margin: 5%;
+        padding: 4%;
+    }
+
+    img.logoCac {
+        width: 60%;
+        height: 60%;
+    }
+
+    div#tarjetas {
+        padding: 10%;
+    }
+
+    #menuFooter {
+        height: 80vh;
+    }
+
+    #conoce {
+        margin-top: 5%;
+    }
+
+    h2.bsas {
+        margin-bottom: 3%;
+    }
+
+    #formulario {
+        margin: 4%;
+    }
+
+    #oradorEnviar {
+        padding: 0;
+    }
+ }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+    img.logoCac {
+        width: 50%;
+        height: 50%;
+    }
+
+    #headerRow {
+        display: flex;
+        justify-content: left;
+    }
+
+    #menuHeader {
+        display: flex;
+        justify-content: right;
+    }
+
+    #logo {
+        display: flex;
+        text-align: start;
+    }
+
+    li.nav-item {
+        margin: 0;
+    }
+
+    div h2.text-end {
+        display: flex;
+        justify-items: right;
+        justify-content: right;
+    }
+
+    #texto {
+        text-align: end;
+    }
+
+    div#botonComentario {
+        display: flex;
+        justify-content: end;
+        padding-right: 0;
+        margin-right: 0;
+    }
+
+    div.row#fondo {
+        display: flex;
+        justify-content: right;
+        align-items: flex-end;
+    }
+
+    div#tarjetas {
+        padding: 0;
+    }
+
+    div.card {
+        margin: 0;
+        padding: 0;
+    }
+
+    div#tarjetaRow {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #conoceOrador {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    div#grillaUno {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        padding: 5%;
+        margin-right: 0;
+        margin-left: 4vw;
+    }
+
+    div#grillaDos {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        padding: 5%;
+    }
+
+    div#grillaTres {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        padding: 5%;
+        margin-left: -4vw;
+    }
+
+    #textoMedio {
+        margin-top: 1%;
+        padding-left: 1%;
+        height: 70vh;
+    }
+
+    #imagenYTexto {
+        margin: 0;
+        padding: 0;
+    }
+
+    #imagenHono {
+        margin: 0;
+        margin-top: 2%;
+        padding-right: 1%;
+    }
+
+    h2.bsas {
+        display: flex;
+        justify-content: left;
+    }
+
+    #conoce {
+        display: flex;
+        margin-left: 0;
+        margin-bottom: 25%;
+    }
+
+    #envioUno {
+        margin: 0;
+        padding-right: 1%;
+    }
+
+    #envioDos {
+        margin: 0;
+        padding-left: 1%;
+    }
+
+    #etiquetaArea {
+        display: flex;
+        justify-content: left;
+    }
+
+    #menuFooter {
+        height: 20vh;
+    }
+
+    #item {
+        display: flex;
+        justify-content: center;
+        margin: 2.5%;
+    }
+
+    #menu {
+        display: flex;
+        justify-content: center;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+    }
+
+    div#comentario {
+        margin-top: 20%;
+    }
+ }
