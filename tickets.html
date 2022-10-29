@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="./Favicon/favicon-32x32.png"/>
+    <title>Trabajo Practico Integrador</title>
+    <!-- Link Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+<body>
+    <main>
+        <header>
+            <div class="row">
+                <nav class="navbar">
+                  <!-- Logo CaC -->
+                  <div class="col-sm-12 col-md-12 col-lg-3" id="logo">
+                    <a class="navbar-brand">
+                      <img src="./Images/codoacodo.png" alt="Logo CaC" class="logoCac">
+                      Conf Bs As
+                    </a>
+                  </div>   
+                  <!-- Menu Header -->
+                  <div class="col-sm-12 col-md-12 col-lg-9" id="menuHeader">
+                    <ul class="nav">
+                      <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">La conferencia</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="index.html">Los oradores</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="index.html">El lugar y la fecha</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="index.html">Conviertete en orador</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="tickets" href="#">Comprar tickets</a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+              </div>
+        </header>
+
+        <section>
+            <!------------ Tarjetas ------------>
+            <div class="row justify-content-center" id="cajaTarjeta">
+                <div class="col-sm-12 col-md-4" id="uno">
+                    <div class="card border-primary">
+                        <div class="card-body text-center">
+                            <h4 class="card-title">Estudiante</h4>
+                            <p class="card-text">Tienen un descuento</p>
+                            <h3 class="card-title">80%</h3>
+                            <p class="card-text">* presentar documentacion</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-4" id="dos">
+                    <div class="card border-info">
+                        <div class="card-body text-center">
+                            <h4 class="card-title">Trainee</h4>
+                            <p class="card-text">Tienen un descuento</p>
+                            <h3 class="card-title">50%</h3>
+                            <p class="card-text">* presentar documentacion</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-sm-12 col-md-4" id="tres">
+                    <div class="card border-warning">
+                        <div class="card-body text-center">
+                            <h4 class="card-title">Junior</h4>
+                            <p class="card-text">Tienen un descuento</p>
+                            <h3 class="card-title">15%</h3>
+                            <p class="card-text">* presentar documentacion</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!------------ Texto ------------>
+            <div class="row">
+                <div class="col" id="textoUno">
+                    <p>Venta</p>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col" id="textoDos">
+                    <h2>VALOR DE TICKET $ 200</h2>
+                </div>
+            </div>
+            <!------------ Formulario ------------>
+            <form>
+                <div class="row justify-content-center" id="cajaUno">
+                    <div class="col-sm-12 col-md-6" id="formNombre">
+                        <input type="text" class="form-control" placeholder="Nombre" name="nombre" id="nombre">
+                        <p id="mensajeNombre"></p>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6" id="formApellido">
+                        <input type="text" class="form-control" placeholder="Apellido" name="apellido" id="apellido">
+                        <p id="mensajeApellido"></p>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center" id="cajaDos">
+                    <div class="col-sm-12" id="formCorreo">
+                        <input type="email" class="form-control" placeholder="Correo" name="correo" id="correo">
+                        <p id="mensajeCorreo"></p>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center" id="cajaTres">
+                    <div class="col-sm-12 col-md-6" id="formCantidad">
+                        <label for="correo" class="form-label" id="labelCantidad">Cantidad</label>
+                        <input type="text" class="form-control" placeholder="cantidad" name="cantidad" id="cantidad">
+                        <p id="mensajeCantidad"></p>
+                    </div>
+                
+                    <div class="col-sm-12 col-md-6" id="formCategoria">
+                        <label for="correo" class="form-label" id="labelCategoria">Categoria</label>
+                        <select class="form-select" id="seleccion">
+                            <option value="0" selected>Seleccionar</option>
+                            <option value="1">Sin Categoria</option>
+                            <option value="2">Estudiante</option>
+                            <option value="3">Trainee</option>
+                            <option value="4">Junior</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center" id="cajaPrecio">
+                    <div class="col-sm-12 alert alert-success" id="cuadro">
+                        <p>Total a Pagar: $</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p id="precio"></p>
+                    </div>
+                </div>
+                <!------------ Botones ------------>
+                <div class="row">
+                    <div class="col" id="botonBorrar">
+                        <button type="button" class="btn" id="borrar">Borrar</button>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col" id="botonResumen">
+                        <button type="button" class="btn" id="resumen">Resumen</button>
+                    </div>
+                </div>
+            </form>
+
+        </section>
+
+        <footer>
+            <!-- Menu Footer -->
+            <div class="row" id="menuFooter">
+                <ul class="row nav justify-content-center" id="menu">
+                <li class="nav-item col-sm-5 col-md-4 col-lg-1" id="item">
+                    <a class="nav-link" href="construccion.html"><b>Preguntas<br>frecuentes</b></a>
+                </li>
+                <li class="nav-item col-sm-5 col-md-4 col-lg-1" id="item">
+                    <a class="nav-link" href="construccion.html"><b>Contáctanos</b></a>
+                </li>
+                <li class="nav-item col-sm-5 col-md-4 col-lg-1" id="item">
+                    <a class="nav-link" href="construccion.html"><b>Prensa</b></a>
+                </li>
+                <li class="nav-item col-sm-5 col-md-4 col-lg-1" id="item">
+                    <a class="nav-link" href="construccion.html"><b>Conferencias</b></a>
+                </li>
+                <li class="nav-item col-sm-5 col-md-4 col-lg-1" id="item">
+                    <a class="nav-link" href="construccion.html"><b>Terminos y<br>condiciones</b></a>
+                </li>
+                <li class="nav-item col-sm-5 col-md-4 col-lg-1" id="item">
+                    <a class="nav-link" href="construccion.html"><b>Privacidad</b></a>
+                </li>
+                <li class="nav-item col-sm-12 col-md-12 col-lg-1" id="item">
+                    <a class="nav-link" href="construccion.html"><b>Estudiantes</b></a>
+                </li>
+                </ul>
+            </div>
+        </footer>
+    </main>
+    <!-- Script Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+    <!-- Link Css -->
+    <link href="./Css/style.css" rel="stylesheet">
+</body>
+<script src="./Js/main.js"></script>
+</html>

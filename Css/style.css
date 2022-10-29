@@ -285,6 +285,71 @@ footer {
     text-align: justify;
 }
 
+/* ---------- Pagina Tickets ---------- */
+
+section {
+    margin: 0vh 2vw;
+ }
+ 
+ #uno , #dos , #tres {
+    margin: 1vh 1vw;
+ }
+ 
+ button#borrar , button#resumen {
+    background-color: rgb(151, 201, 62);
+ }
+ 
+ #textoUno , #textoDos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1vh;
+ }
+ 
+ #formNombre , #formApellido , #formCorreo , #formCantidad , #formCategoria {
+    margin: 1vh 1vw;
+    width: 100vw;
+ }
+ 
+ #labelCantidad , #labelCategoria {
+    margin: 1vh 0vw;
+    padding: 0;
+    width: 95vw;
+ }
+ 
+ #cajaUno , #cajaDos , #cajaTres {
+    margin: 1vh 2vw;
+ }
+ 
+ #botonBorrar , #botonResumen , #cuadro , #borrar , #resumen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2vh 2vw;
+    width: 90vw;
+ }
+ 
+ #cajaPrecio {
+    margin: 0vh 4vw;
+ }
+ 
+ #cuadro {
+    justify-content: left;
+    align-items: center;
+    color:cornflowerblue;
+ }
+ 
+ #cuadro p {
+    margin: 0;
+ }
+ 
+ #mensajeNombre , #mensajeApellido , #mensajeCantidad , #mensajeCorreo {
+    display: flex;
+    justify-content: left;
+    margin-bottom: 1vh;
+    margin-left: 1vw;
+ }
+
 /* ---------- Media Queries ---------- */
 
 /* Small devices (landscape phones, 576px and up) */
@@ -422,6 +487,48 @@ footer {
     #oradorEnviar {
         padding: 0;
     }
+
+    /* ---------- Pagina Tickets ---------- */
+
+    #uno , #dos , #tres {
+        padding: 1vh 1vw;
+        margin: 1vh 0vw;
+        width: 25%;
+     }
+  
+     #formCantidad , #formCategoria {
+        width: 45%;
+     }
+  
+     #formNombre , #formApellido {
+        width: 45%;
+        margin: 1vh 1vw;
+     }
+  
+     #formCorreo {
+        width: 90%;
+        padding: 0;
+     }
+  
+     #cajaTarjeta {
+        margin: 1vh 0vw;
+     }
+  
+     #cajaPrecio {
+        margin: 0vh 7vw;
+     }
+  
+     #botonBorrar , #botonResumen {
+        margin: 0vh 5vw;
+        width: 85%;
+     }
+  
+     #mensajeNombre , #mensajeApellido , #mensajeCantidad , #mensajeCorreo {
+        display: flex;
+        justify-content: left;
+        margin-bottom: 1vh;
+        margin-left: 1vw;
+     }
  }
 
 /* Large devices (desktops, 992px and up) */
@@ -582,4 +689,21 @@ footer {
     div#comentario {
         margin-top: 20%;
     }
+
+    /* ---------- Pagina Tickets ---------- */
+
+    #botonBorrar , #botonResumen {
+        margin: 0vh 4vw;
+     }
+  
+     #cajaPrecio {
+        margin: 0vh 6vw;
+     }
+  
+     #mensajeNombre , #mensajeApellido , #mensajeCantidad , #mensajeCorreo {
+        display: flex;
+        justify-content: left;
+        margin-bottom: 1vh;
+        margin-left: 1vw;
+     }
  }
